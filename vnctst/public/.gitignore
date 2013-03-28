@@ -1,0 +1,6 @@
+page[0-9]*
+tag
+atom.xml
+index.html
+
+*.html
