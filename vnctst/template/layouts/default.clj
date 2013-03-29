@@ -37,7 +37,7 @@
 
   [:hr]
   (footer
-    (link "VNCTST games" "http://vnctst.tir.jp/")
+    (link "VNCTST games" "http://vnctst.tir.jp/ja/")
     ;(link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)))
     ;"&nbsp; 2013"
     ))
