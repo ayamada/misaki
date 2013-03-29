@@ -28,12 +28,11 @@
   [date]
   (if date
     (str/join
-      " "
-      [(.toString date "dd")
-       ; Joda: "MMM" is not worked in my environment
-       (nth '(_ Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)
-            (t/month date))
-       (.toString date "yyyy")])))
+      "/"
+      [(.toString date "YYYY")
+       (.toString date "MM")
+      (.toString date "DD")]
+      )))
 
 ; =now
 (defn now
