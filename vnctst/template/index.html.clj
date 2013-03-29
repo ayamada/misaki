@@ -4,9 +4,9 @@
 
 ;; Your own function in template
 (defn page-header [[fs & rs] & [desc]]
-  [:div {:class "page-header"}
-   [:h1 [:span fs] rs]
-   (if desc (p {:class desc}) [])
+  [:div
+   [:div {:class "page-header"} [:h1 [:span fs] rs]]
+   (if desc (p {:class "desc"} desc) "")
    ])
 
 ; Template is compiled with hiccup
@@ -39,8 +39,13 @@
 ;(prev-next-page-link)
 
 
-(page-header "Information" "関連情報")
-(p "あとでかきます")
+(page-header "Information" "関連情報など")
+(ul [
+     [:span "android版のゲーム/アプリは、"
+      (link "Sony Tablet S" "http://www.sony.jp/tablet/products/S1/")
+      "にて動作確認を行っています。"
+      ]
+     ])
 
 
 (page-header "About this site" "このサイトについて")
