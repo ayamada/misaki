@@ -203,6 +203,8 @@
             {:year     (some->> date year  str)
              :month    (some->> date month (format "%02d"))
              :day      (some->> date day   (format "%02d"))
+             :gpdir    (.. file getParentFile getParentFile getName)
+             :pdir     (.. file getParentFile getName)
              :filename filename})))
 
 ; =make-regular-output-filename

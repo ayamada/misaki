@@ -39,10 +39,9 @@
 
  ;; post setting
  ;;   default value: #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
- :post-filename-regexp #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
- :post-filename-format "{{year}}-{{month}}/{{filename}}"
- ;:post-filename-format "{{tag1}}/{{filename}}"
- ;:post-filename-format "games/{{filename}}"
+ :post-filename-regexp #"(\d{4})(\d{2})(\d{2})(.+)$"
+ :post-filename-format "{{gpdir}}/{{pdir}}"
+ ;;:post-filename-format "{{year}}-{{month}}/{{filename}}"
 
  ;; post sort type (:date :name :title :date-desc :name-desc :title-desc)
  ;;   default value: :date-desc
