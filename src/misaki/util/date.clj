@@ -31,7 +31,7 @@
       "/"
       [(.toString date "YYYY")
        (.toString date "MM")
-      (.toString date "DD")]
+      (.toString date "dd")]
       )))
 
 ; =now
