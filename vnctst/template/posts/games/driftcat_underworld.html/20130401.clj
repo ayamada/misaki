@@ -8,7 +8,6 @@
 (p "「ぶらり猫の旅　地底帝国編」は、猫を操作して地底帝国からの脱出を目指す、"
    "ぬるいRPGです。")
 (p "想定プレイ時間は10分です。")
-(p "ちょっと短いので、あとでマップを二つぐらい増やすかもしれません。")
 (p "そのうち続編を作ります。")
 
 
@@ -21,14 +20,23 @@
  [:dt "Android版"]
  [:dd (link "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld")]
  [:dt "Windows版(要Javaインストール)"]
- [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.1.1-windows.zip")]
+ [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.0-windows.zip")]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
- [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.1.1-jar.zip")]
+ [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.0-jar.zip")]
  ]
 
 
 (heading-2 "History")
 [:dl
+ [:dt "2013/04/01 version 1.2.0"]
+ [:dd "※セーブデータに互換性がなくなりました。猫の強さ以外は最初からになります"]
+ [:dd "地下二階を実装"]
+ [:dd "実績内容一部変更"]
+ [:dd "一部イベントの内容変更"]
+ [:dd "HP回復速度の大幅短縮"]
+ [:dd "敵パラメータ調整"]
+ [:dd "戦闘ロジック調整"]
+ [:dd "グラフィック微修正"]
  [:dt "2013/03/29 version 1.1.1"]
  [:dd "移動がおかしくなる問題を修正"]
  [:dt "2013/03/28 version 1.1.0"]
