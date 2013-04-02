@@ -27,7 +27,7 @@
 
 
 (page-header "Applications" "アプリ")
-(p "現在準備中")
+(ul ["現在準備中"])
 
 
 (page-header "News" "更新情報")
@@ -63,8 +63,10 @@
 
 
 (page-header "Contact" "連絡先")
-(p "あとでちゃんとした連絡先を用意します…今のところは"
-   (link "@rnkv" "https://twitter.com/rnkv")
-   "におねがいします。")
+(ul [
+     [:span "あとでちゃんとした連絡先を用意します…今のところは"
+      (link "@rnkv" "https://twitter.com/rnkv")
+      "におねがいします。"]
+     ])
 
 
