@@ -2,41 +2,40 @@
 ; @layout  default
 ; @title   VNCTST games
 
-;; Your own function in template
+
 (defn page-header [[fs & rs] & [desc]]
   [:div
    [:div {:class "page-header"} [:h1 [:span fs] rs]]
    (if desc (p {:class "desc"} desc) "")
    ])
 
-; Template is compiled with hiccup
+
 (header
   (:title site)
   "VNCTST games では、Android向け/デスクトップOS向けの"
   "各種のゲームおよびアプリを公開しています。"
   )
 
-;; Sample post tags
-;(page-header "Sample tags")
-;(tag-list)
+;; TODO: 以下の各見出しにidをつけて、目次を作成する
 
-;; Template source
-;(page-header "Template source")
-;[:p "you can highlight your code with "
-; (link "google-code-prettify" "http://code.google.com/p/google-code-prettify/")]
 
-(page-header "Games")
+(page-header "Games" "ゲーム")
 (ul [
      (link "ぶらり猫の旅　地底帝国編" "games/driftcat_underworld.html")
      (link "space drop" "games/space_drop.html")
      ])
-; Markdown like format with "p" function
-;(p "See " (link "http://liquidz.github.com/misaki/"))
 
-;; Sample posts
-(page-header "News")
+
+(page-header "Applications" "アプリ")
+(p "現在準備中")
+
+
+(page-header "News" "更新情報")
 (post-list)
 ;(prev-next-page-link)
+(p "更新情報は、"
+   (link "atom.xml" "atom.xml")
+   "からも取得可能です(何らかのフィードリーダーを使ってください)。")
 
 
 (page-header "Information" "関連情報など")

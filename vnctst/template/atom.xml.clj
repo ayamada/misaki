@@ -17,6 +17,14 @@
     [:updated (date->xml-schema (:date post))]
     [:id (str (:base site) (:url post))]
     [:content {:type "html"}
-     (force (:lazy-content post) )
+     ;(force (:lazy-content post) )
+     [:ul
+      [:li
+       (misaki.util.date/date->string (:date post))
+       "&nbsp;-&nbsp;"
+       (link (:title post) (:url post))
+       (if (:comment post)
+         (str "&nbsp;-&nbsp;" (:comment post))
+         "")]]
      ]])]
 
