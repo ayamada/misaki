@@ -1,5 +1,6 @@
 ; @layout  post
 ; @title   ぶらり猫の旅　地底帝国編
+; @comment version 1.2.1 リリース
 
 (defn heading-2 [title & [id]]
   (let [id-true (or id title)]
@@ -20,14 +21,20 @@
  [:dt "Android版"]
  [:dd (link "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld")]
  [:dt "Windows版(要Javaインストール)"]
- [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.0-windows.zip")]
+ [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.1-windows.zip")]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
- [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.0-jar.zip")]
+ [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.1-jar.zip")]
  ]
 
 
 (heading-2 "History")
 [:dl
+ [:dt "2013/04/02 version 1.2.1"]
+ [:dd "※タイトルで「そのた」を二回実行するとエラー終了する問題を修正"]
+ [:dd "回復ポイントでの回復時に魔法効果を消去するようにした"]
+ [:dd "魔法アイコンとイベントアイコンは同時に発動しないようにする"]
+ [:dd "ダイアログ内ボタンの接触判定を大きくした"]
+ [:dd "一部の敵パラメータ修正"]
  [:dt "2013/04/01 version 1.2.0"]
  [:dd "※セーブデータに互換性がなくなりました。猫の強さ以外は最初からになります"]
  [:dd "地下二階を実装"]
