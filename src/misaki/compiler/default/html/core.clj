@@ -413,10 +413,13 @@
   ([] (post-list {}))
   ([attr]
    (ul
-     #(list
+     #(list*
         (date/date->string (:date %))
         "&nbsp;-&nbsp;"
-        (link (:title %) (:url %)))
+        (link (:title %) (:url %))
+        (if (:comment %)
+          (list "&nbsp;-&nbsp;" (:comment %))
+          nil))
      attr
      (:posts *site*))))
 
