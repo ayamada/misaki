@@ -1,6 +1,7 @@
 ;; Define template options here
 ; @layout  default
 ; @title   VNCTST games
+; @nocache true
 
 
 (defn page-header [[fs & rs] & [desc]]

@@ -29,6 +29,11 @@
  ]
 
 
+(heading-2 "License")
+[:ul [:li [:a {:href "driftcat_underworld_license.html"}
+           "driftcat_underworld_license.html"]]]
+
+
 (heading-2 "History")
 [:dl
  [:dt "2013/04/03 version 1.2.2"]
@@ -73,9 +78,5 @@
  [:dd "公式ページ設置"]
  ]
 
-
-(heading-2 "License")
-[:ul [:li [:a {:href "driftcat_underworld_license.html"}
-           "driftcat_underworld_license.html"]]]
 
 
