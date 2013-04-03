@@ -1,6 +1,7 @@
 ; @layout  post
 ; @title   ぶらり猫の旅　地底帝国編　ライセンス情報
 ; @nocache true
+; @date 2013/03/27
 
 
 (p {:class "desc"} "(現在準備中、あとでまとめなおします)")

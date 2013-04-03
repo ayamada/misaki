@@ -159,7 +159,18 @@
                       nfirst drop-last)] ; last = filename
     (if (and date-seq (= 3 (count date-seq))
              (every? #(re-matches #"^[0-9]+$" %) date-seq))
-      (apply date-time (map #(Integer/parseInt %) date-seq)))))
+      (apply date-time (map #(Integer/parseInt %) date-seq))
+      ;; TODO: its very dirty hack
+      (let [pto (do
+                  (eval '(use '[misaki.compiler.default.template
+                                :only [parse-template-option]]))
+                  (eval (list 'parse-template-option (slurp post-file))))
+            match (re-seq #"(\d\d\d\d)\D(\d\d)\D(\d\d)"
+                          (or (:date pto) ""))
+            [_ yyyy mm dd] (first match)]
+        (when yyyy
+          (apply date-time (map #(Integer/parseInt %) [yyyy mm dd]))))
+      )))
 
 ; =remove-date-from-name
 (defn remove-date-from-name

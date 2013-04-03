@@ -1,5 +1,7 @@
 ; @layout  post
 ; @title   space drop
+; @date 2013/03/25
+; @nocache true
 
 
 (p "space dropは、"

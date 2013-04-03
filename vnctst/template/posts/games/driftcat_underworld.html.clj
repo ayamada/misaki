@@ -1,6 +1,8 @@
 ; @layout  post
 ; @title   ぶらり猫の旅　地底帝国編
-; @comment version 1.2.1 リリース
+; @comment version 1.2.2 リリース
+; @date 2013/04/03
+; @nocache true
 
 (defn heading-2 [title & [id]]
   (let [id-true (or id title)]
@@ -8,7 +10,7 @@
 
 (p "「ぶらり猫の旅　地底帝国編」は、猫を操作して地底帝国からの脱出を目指す、"
    "ぬるいRPGです。")
-(p "想定プレイ時間は10分です。")
+(p "想定プレイ時間は10分もしくは30分です。")
 (p "そのうち続編を作ります。")
 
 
@@ -21,14 +23,20 @@
  [:dt "Android版"]
  [:dd (link "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld")]
  [:dt "Windows版(要Javaインストール)"]
- [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.1-windows.zip")]
+ [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.2-windows.zip")]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
- [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.1-jar.zip")]
+ [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.2-jar.zip")]
  ]
 
 
 (heading-2 "History")
 [:dl
+ [:dt "2013/04/03 version 1.2.2"]
+ [:dd "※セーブデータに互換性がなくなりました。猫の強さ以外は最初からになります"]
+ [:dd "ストーリーの追加、および、これに伴う一部メッセージの変更"]
+ [:dd "一部の敵の強さ調整"]
+ [:dd "猫ヒールの回復力を強化"]
+ [:dd "アイコン画像微修正"]
  [:dt "2013/04/02 version 1.2.1"]
  [:dd "※タイトルで「そのた」を二回実行するとエラー終了する問題を修正"]
  [:dd "回復ポイントでの回復時に魔法効果を消去するようにした"]

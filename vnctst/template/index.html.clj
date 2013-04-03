@@ -34,7 +34,8 @@
 (post-list)
 ;(prev-next-page-link)
 (p "更新情報は、"
-   (link "atom.xml" "atom.xml")
+   " http://vnctst.tir.jp/ja/atom.xml "
+   ;(link "http://vnctst.tir.jp/ja/atom.xml" "atom.xml")
    "からも取得可能です(何らかのフィードリーダーを使ってください)。")
 
 
