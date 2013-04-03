@@ -160,7 +160,7 @@
   ([n attr s]
    (let [tag  (keyword (str "h" n))
          attr (merge {:id (gensym)} attr)
-         link (link {:class "dagger"} "&dagger;" (str "#" (:id attr)))]
+         link [:sup (link {:class "dagger"} "&dagger;" (str "#" (:id attr)))]]
      (if (string? s)
        [tag attr [:span (first s)] (rest s) link]
        [tag attr s link]))))
