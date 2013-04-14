@@ -1,22 +1,110 @@
 ; @layout  post
 ; @title   ぶらり猫の旅　地底帝国編　ライセンス情報
+; @comment 作成し直し
 ; @nocache true
-; @date 2013/03/27
+; @date 2013/04/04
+
+(defn heading-fn [h-fn title & [desc]]
+  [:div
+    (h-fn {:id title} title)
+   (if desc (p {:class "desc"} desc) "")
+   ])
+
+(defn heading-2 [& args] (apply heading-fn h2 args))
+(defn heading-3 [& args] (apply heading-fn h3 args))
 
 
-(p {:class "desc"} "(現在準備中、あとでまとめなおします)")
+(defn link-with-img [link-url img-url label & [a-class]]
+  (let [c (or a-class "img")]
+    [:div {:class "with-img"}
+     (link [:span [:img {:src img-url :class c}] [:br] [:small label]]
+           link-url)]))
 
+(defn tir-yamada []
+  (link [:small "技情研ネット 山田"]
+        "http://doc.tir.ne.jp/"))
+
+(defn staffs [& ss]
+  `[:blockquote
+    {:class "staffs"}
+    ~@ss])
+
+
+(p {:class "desc"} "兼スタッフロール、兼利用ソフト一覧")
+
+[:div
+ {:class "staff-roll"}
+
+ (heading-2 "Planning" "企画")
+ (staffs [:div (tir-yamada)])
+
+ (heading-2 "Programming" "プログラム")
+ (staffs [:div (tir-yamada)])
+
+ (heading-2 "Graphics" "グラフィック")
+ (staffs [:div (tir-yamada)])
+
+ (heading-2 "Fonts" "フォント")
+ (staffs
+   [:div
+    (link [:span "M+ FONTS " [:small "by M" [:sup "+"] " FONTS PROJECT"]]
+          "http://mplus-fonts.sourceforge.jp/")]
+   [:div "3x5 FONT " [:small "by 技情研ネット 山田"]]
+   )
+
+ (heading-2 "Sound Effects" "効果音")
+ (staffs [:div (tir-yamada)])
+
+ (heading-2 "Musics" "音楽")
+ (staffs
+   [:div
+    [:small "元音源： "]
+    (link "Antonin Dvorak - Slavonic Dances Op. 72, No. 4"
+          "http://classicalmusicmp3freedownload.com/ja/index.php?title=%E3%83%89%E3%83%B4%E3%82%A9%E3%83%AB%E3%82%B6%E3%83%BC%E3%82%AF_%E3%82%B9%E3%83%A9%E3%83%96%E8%88%9E%E6%9B%B2%E7%AC%AC2%E9%9B%86_Op.72")]
+   [:div
+    [:small "元音源： "]
+    (link "Antonin Dvorak - Slavonic Dances Op. 46, No. 8"
+          "http://classicalmusicmp3freedownload.com/ja/index.php?title=%E3%83%89%E3%83%B4%E3%82%A9%E3%83%AB%E3%82%B6%E3%83%BC%E3%82%AF_%E3%82%B9%E3%83%A9%E3%83%96%E8%88%9E%E6%9B%B2%E7%AC%AC1%E9%9B%86_Op.46")]
+   [:div [:small "加工： "] (tir-yamada)]
+   )
+
+ (heading-2 "Other Works" "その他作業")
+ (staffs [:div (tir-yamada)])
+
+ (heading-2 "Used Software" "制作に利用したソフト(順適当)")
+ (staffs
+   [:div (link-with-img "http://libgdx.badlogicgames.com/"
+                        "/ja/img/libgdx.png"
+                        "libGDX" "bg-white")]
+   [:div (link "Clojure" "http://clojure.org/")]
+   [:div (link "Clojure for Android" "https://github.com/sattvik/clojure")]
+   [:div (link "Clojure REPL for Android" "https://play.google.com/store/apps/details?id=com.sattvik.clojure_repl")]
+   [:div (link "Android SDK" "http://developer.android.com/sdk/")]
+   [:div (link "Java" "http://www.java.com/ja/")]
+   [:div (link "Hiero" "http://code.google.com/p/libgdx/downloads/detail?name=hiero.jar&can=2&q=")]
+   [:div (link "GIMP" "http://www.gimp.org/")]
+   [:div (link "Audacity" "http://audacity.sourceforge.net/")]
+   [:div (link "oggenc2" "http://www.rarewares.org/ogg-oggenc.php")]
+   [:div (link "LabChirp" "http://labbed.net/software.php?id=labchirp")]
+   [:div (link "sfxr" "http://www.drpetter.se/project_sfxr.html")]
+   [:div (link "bfxr" "http://www.bfxr.net/")]
+   [:div (link "世界樹" "http://openmidiproject.sourceforge.jp/Sekaiju.html")]
+   [:div (link "Dropbox" "https://www.dropbox.com/")]
+   [:div (link "ckw-mod" "http://ckw-mod.github.com/")]
+   [:div (link "MinGW / MSYS" "http://www.mingw.org/")]
+   [:div (link "SKK日本語入力FEP" "http://coexe.web.fc2.com/skkfep.html")]
+   [:div (link "Vim(香り屋版)" "http://www.kaoriya.net/software/vim/")]
+   [:div (link "Leiningen" "https://github.com/technomancy/leiningen")]
+   [:div (link "git" "http://git-scm.com/")]
+   [:div (link-with-img "https://github.com/ayamada/clan"
+                        "/ja/img/clan.png"
+                        "CLAN")]
+   )
+
+ (heading-2 "Embedded Software's Licenses" "組み込み利用ソフトのライセンス(英語)")
+ [:div {:class "license-text"}
 
 #-PLAINTEXT
-====================
-ライセンスじょうほう
-====================
-
-「ぶらり猫の旅　地底帝国編」では、
-以下のソフトを使ったり使わなかったりしています。
-
-
-
 
 CLAN
 ----
@@ -616,3 +704,12 @@ Launch4j
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PLAINTEXT
+
+  ]
+ (heading-2 "Produced by" "制作")
+ (staffs [:div (link-with-img "http://doc.tir.ne.jp/"
+                              "/ja/img/tir.png"
+                              "技情研ネット")])
+ ]
+
+
