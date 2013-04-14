@@ -55,10 +55,11 @@
            [:dd "利益を上げたい場合は、広告以外の手法(有料販売など)をとる事とする。"]
            ]]]
 [:ul [:li [:dl
-           [:dt "ETC - その他"]
+           [:dt "etc. - その他"]
            [:dd "思い付き次第追加する予定。"]
            ]]]
 
+(def banner-url "http://vnctst.tir.jp/ja/img/banner.png")
 
 (heading-2 "About" "いろいろ")
 [:ul
@@ -83,6 +84,16 @@
               "https://github.com/ayamada/misaki")
         " にカスタマイズ内容およびテンプレートそのものを"
         "保存しています。"]]]
+ [:li
+  "以下は VNCTST games のバナーです。"
+  "リンクの際にお使いください。"
+  [:br]
+  [:img {:src banner-url :alt "バナー画像"}]
+  [:br]
+  "( " [:code banner-url] " )"
+  [:br]
+  "あとでもっとマシなバナーに作り直します。あとで。"
+  ]
  ]
 
 
