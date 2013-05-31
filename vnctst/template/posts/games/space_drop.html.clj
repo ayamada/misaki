@@ -1,6 +1,7 @@
 ; @layout  post
 ; @title   space drop
-; @date 2013/03/25
+; @comment youtubeリンク追加
+; @date 2013/04/27
 ; @nocache true
 
 
@@ -16,7 +17,9 @@
 
 
 [:h2 "Movie"]
-(ul [(link "http://www.nicovideo.jp/watch/sm20266312")])
+(ul [[:span (link "http://www.youtube.com/watch?v=oR-fVowVQwA") " (youtube)"]
+     [:span (link "http://www.nicovideo.jp/watch/sm20266312") " (ニコ動)"]
+     ])
 
 
 [:h2 "Download"]
@@ -32,6 +35,8 @@
 
 [:h2 "History"]
 [:dl
+ [:dt "2013/04/27"]
+ [:dd "youtube動画リンク追加"]
  [:dt "2013/03/25"]
  [:dd "公式ページ設置"]
  [:dt "2013/03/08 version 1.0.4"]

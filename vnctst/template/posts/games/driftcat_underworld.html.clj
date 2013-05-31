@@ -1,7 +1,7 @@
 ; @layout  post
 ; @title   ぶらり猫の旅　地底帝国編
-; @comment version 1.2.2 リリース
-; @date 2013/04/03
+; @comment youtubeリンク追加
+; @date 2013/04/27
 ; @nocache true
 
 (defn heading-2 [title & [id]]
@@ -15,7 +15,9 @@
 
 
 (heading-2 "Movie")
-(ul [(link "http://www.nicovideo.jp/watch/sm20447162")])
+(ul [[:span (link "http://www.youtube.com/watch?v=E3f7Sc5aVA0") " (youtube)"]
+     [:span (link "http://www.nicovideo.jp/watch/sm20447162") " (ニコ動)"]
+     ])
 
 
 (heading-2 "Download")
@@ -36,6 +38,8 @@
 
 (heading-2 "History")
 [:dl
+ [:dt "2013/04/27"]
+ [:dd "youtube動画リンク追加"]
  [:dt "2013/04/03 version 1.2.2"]
  [:dd "※セーブデータに互換性がなくなりました。猫の強さ以外は最初からになります"]
  [:dd "ストーリーの追加、および、これに伴う一部メッセージの変更"]
