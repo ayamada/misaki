@@ -6,7 +6,6 @@
                  [sequence :refer :all]]
     [clj-time.core         :refer [date-time year month day]]
     [text-decoration.core  :refer [cyan red bold]]
-    [clostache.parser      :refer [render]]
     [clojure.string        :as str]
     [clojure.java.io       :as io])
   (:import [java.io File FileNotFoundException]))
@@ -21,18 +20,18 @@
   #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$")
 (def POST_OUTPUT_NAME_FORMAT
   "Default format to generage post output filename."
-  "{{year}}/{{month}}/{{filename}}")
+  "$(year)/$(month)/$(filename)")
 (def INDEX_TEMPLATE_REGEXP
   "Default regexp to detect index template file."
   #"^index\.")
 (def PAGE_FILENAME_FORMAT
   "Default format to generate page output filename."
-  "page{{page}}/{{filename}}")
+  "page$(page)/$(filename)")
 (def NOTIFY_SETTING
-  {:fixed-title  "{{filename}}"
+  {:fixed-title  "$(filename)"
    :fixed        "FIXED"
-   :failed-title "{{filename}} : {{line}}"
-   :failed       "{{message}}"})
+   :failed-title "$(filename) : $(line)"
+   :failed       "$(message)"})
 
 ;; ## Declarations
 

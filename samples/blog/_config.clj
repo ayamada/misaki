@@ -22,7 +22,8 @@
  :lang "en"
 
  ;; default site data
- :site {:charset    "utf-8"
+ :site {:atom-base  "http://localhost:8080" ; please change "localhost:8080" to your blog domain
+        :charset    "utf-8"
         :site-title "misaki demo page"
         :twitter    "uochan"
         :css        ["http://fonts.googleapis.com/css?family=Josefin+Sans"
@@ -40,7 +41,7 @@
  ;; post setting
  ;;   default value: #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
  :post-filename-regexp #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
- :post-filename-format "{{year}}-{{month}}/{{filename}}"
+ :post-filename-format "$(year)-$(month)/$(filename)"
 
  ;; post sort type (:date :name :title :date-desc :name-desc :title-desc)
  ;;   default value: :date-desc
@@ -55,8 +56,8 @@
  :posts-per-page 2
 
  ;; filename format to generate index file with pagination
- ;;   default value: "page{{page}}/{{filename}}"
- :page-filename-format "page{{page}}/{{filename}}"
+ ;;   default value: "page$(page)/$(filename)"
+ :page-filename-format "page$(page)/$(filename)"
 
  ;; clojurescript compile options
  ;; src-dir base is `:template-dir`
@@ -79,17 +80,17 @@
 
  ;; notify setting(OPTIONAL)
  :notify-setting {;; title for fixing notification
-                  ;;  default value: "{{filename}}"
-                  :fixed-title  "{{filename}}"
+                  ;;  default value: "$(filename)"
+                  :fixed-title  "$(filename)"
                   ;; message for fixing notication
                   ;;   default value: "FIXED"
                   :fixed        "FIXED"
                   ;; title for failing notification
-                  ;;   default value: "{{filename}} : {{line}}"
-                  :failed-title "{{filename}} : {{line}}"
+                  ;;   default value: "$(filename) : $(line)"
+                  :failed-title "$(filename) : $(line)"
                   ;; message for failing notification
-                  ;;   default value: {{message}}
-                  :failed       "{{message}}"}
+                  ;;   default value: $(message)
+                  :failed       "$(message)"}
 
  ;; compiler setting
  ;;   default value: "default"
