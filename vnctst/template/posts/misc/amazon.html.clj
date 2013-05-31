@@ -8,6 +8,8 @@
   (let [id-true (or id title)]
     (h2 {:id id-true} title)))
 
+(p {:class "desc"} "お願い")
+
 (p "VNCTST gamesを運営している技情研ネット(というか山田)は現在、資金不足です。")
 (p "もし「VNCTST gamesのゲーム/アプリが気に入った」"
    "「VNCTST gamesを支援したい」"
@@ -32,35 +34,35 @@
 ;;        更にターゲッティングされても問題ない、という事
 
 (heading-2 "amazon.co.jp")
-[:ul [:li
-      [:a {:href "http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22"}
-       [:img {:src "/img/amazon.gif"
-              :width 300
-              :height 50
-              :border 0
-              :alt "Amazon.co.jp 一般"}]]
-      [:img {:src "http://www.assoc-amazon.jp/e/ir?t=tirnejp-22&l=ur2&o=9"
-             :width 1
-             :height 1
-             :border 0
-             :alt ""
-             :style "border:none !important; margin:0px !important;"
-             }]
-      ]]
+[:div
+ [:a {:href "http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22"}
+  [:img {:src "/img/amazon.gif"
+         :width 300
+         :height 50
+         :border 0
+         :alt "Amazon.co.jp 一般"}]]
+ [:img {:src "http://www.assoc-amazon.jp/e/ir?t=tirnejp-22&l=ur2&o=9"
+        :width 1
+        :height 1
+        :border 0
+        :alt ""
+        :style "border:none !important; margin:0px !important;"
+        }]
+ ]
 
 
 (heading-2 "javari.jp")
-[:ul [:li
-      [:iframe {:src "http://rcm-jp.amazon.co.jp/e/cm?t=tirnejp-22&o=9&p=42&l=ur1&category=endless&m=endless&f=ifr"
-                :width 234
-                :height 60
-                :scrolling "no"
-                :border 0
-                :marginwidth 0
-                :style "border:none;"
-                :frameborder 0
-                }]
-      ]]
+[:div
+ [:iframe {:src "http://rcm-jp.amazon.co.jp/e/cm?t=tirnejp-22&o=9&p=42&l=ur1&category=endless&m=endless&f=ifr"
+           :width 234
+           :height 60
+           :scrolling "no"
+           :border 0
+           :marginwidth 0
+           :style "border:none;"
+           :frameborder 0
+           }]
+ ]
 
 
 
