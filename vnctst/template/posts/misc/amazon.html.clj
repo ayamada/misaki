@@ -1,7 +1,7 @@
 ; @layout  post
 ; @title   On the scrounge
 ; @comment ページ作成
-; @date 2013/05/31
+; @date 2013/06/01
 ; @nocache true
 
 (defn heading-2 [title & [id]]
@@ -48,6 +48,10 @@
         :alt ""
         :style "border:none !important; margin:0px !important;"
         }]
+ [:br]
+ [:script {:charset "utf-8"
+           :type "text/javascript"
+           :src "http://ws.amazon.co.jp/widgets/q?rt=tf_sw&ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/tirnejp-22/8002/a689f5f6-9676-4615-ace3-46e193dd8c29"} " "]
  ]
 
 
@@ -64,6 +68,21 @@
            }]
  ]
 
+
+;; TODO: 自前でリスト化/ウィジェット化しないとどうにも使い勝手が悪い
+(heading-2 "Recommended Items")
+(p {:class "desc"} "VNCTST games おすすめの商品。山田が定期的に購入する物およびその他")
+[:ul [:li
+      [:a {:href "http://www.amazon.co.jp/%E5%AE%9A%E6%9C%9F%E8%B3%BC%E5%85%A5%E7%89%A9/lm/R2H9UILS0KPZ7C/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22"}
+       "定期購入物など"]
+      [:img {:src "http://www.assoc-amazon.jp/e/ir?t=tirnejp-22&l=ur2&o=9"
+             :width 1
+             :height 1
+             :border 0
+             :alt ""
+             :style "border:none !important; margin:0px !important;"
+             }]
+      ]]
 
 
 
