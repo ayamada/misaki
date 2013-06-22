@@ -25,7 +25,10 @@
 [:h2 "Download"]
 [:dl
  [:dt "Android版"]
- [:dd (link "https://play.google.com/store/apps/details?id=jp.ne.tir.drop.android")]
+ [:dd [:a {:href "https://play.google.com/store/apps/details?id=jp.ne.tir.drop.android"}
+       "https://play.google.com/store/apps/details?id=jp.ne.tir.drop.android"
+       [:br]
+       [:img {:alt "Get it on Google Play" :src "http://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}]]]
  [:dt "Windows版(要Javaインストール)"]
  [:dd (link "https://dl.dropbox.com/u/9755436/drop/drop-1.0.4-windows.zip")]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
