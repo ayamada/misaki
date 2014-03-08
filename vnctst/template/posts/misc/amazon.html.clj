@@ -10,11 +10,11 @@
 
 (p {:class "desc"} "お願い")
 
-(p "VNCTST gamesを運営している技情研ネット(というか山田)は現在、資金不足です。")
+(p "VNCTST gamesを運営している技情研ネット(というか山田)は現在、資金が尽きています。")
 (p "もし「VNCTST gamesのゲーム/アプリが気に入った」"
    "「VNCTST gamesを支援したい」"
    "という方がいましたら、"
-   "このページからamazonで買い物をしていただけると"
+   "このページから寄付もしくはamazonで買い物をしていただけると"
    "非常に助かります。")
 (p "(もしAdblock類を使ってる場合、リンクが見えないかも知れません。"
    "その時はすみませんが一時的に解除をお願いします。)")
@@ -33,9 +33,17 @@
 ;;        既にある程度ターゲッティングされてるので、
 ;;        更にターゲッティングされても問題ない、という事
 
+(heading-2 "paypal donation")
+[:div
+ {:style "margin:1em"}
+ "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_blank\"><input type=\"hidden\" name=\"cmd\" value=\"_xclick\" /><input type=\"hidden\" name=\"business\" value=\"T47SCVZKCCHWL\" /><input type=\"hidden\" name=\"item_name\" value=\"VNCTST games donation\" /><input type=\"hidden\" name=\"no_shipping\" value=\"1\" /><input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\" /></form>"
+ ]
+
+
 (heading-2 "amazon.co.jp")
 [:div
- [:a {:href "http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22"}
+ {:style "margin:1em"}
+ [:a {:href "http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22", :target "_blank"}
   [:img {:src "/img/amazon.gif"
          :width 300
          :height 50
@@ -57,6 +65,7 @@
 
 (heading-2 "javari.jp")
 [:div
+ {:style "margin:1em"}
  [:iframe {:src "http://rcm-jp.amazon.co.jp/e/cm?t=tirnejp-22&o=9&p=42&l=ur1&category=endless&m=endless&f=ifr"
            :width 234
            :height 60
@@ -69,11 +78,11 @@
  ]
 
 
-;; TODO: 自前でリスト化/ウィジェット化しないとどうにも使い勝手が悪い
+;; TODO: 自前でリスト化/ウィジェット化しないとどうにも使い勝手が悪い、あとで考える
 (heading-2 "Recommended Items")
 (p {:class "desc"} "VNCTST games おすすめの商品。山田が定期的に購入する物およびその他")
 [:ul [:li
-      [:a {:href "http://www.amazon.co.jp/%E5%AE%9A%E6%9C%9F%E8%B3%BC%E5%85%A5%E7%89%A9/lm/R2H9UILS0KPZ7C/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22"}
+      [:a {:href "http://www.amazon.co.jp/%E5%AE%9A%E6%9C%9F%E8%B3%BC%E5%85%A5%E7%89%A9/lm/R2H9UILS0KPZ7C/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=tirnejp-22", :target "_blank"}
        "定期購入物など"]
       [:img {:src "http://www.assoc-amazon.jp/e/ir?t=tirnejp-22&l=ur2&o=9"
              :width 1

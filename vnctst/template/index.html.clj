@@ -22,6 +22,10 @@
   "各種のゲームおよびアプリを公開しています。"
   )
 
+[:div
+ {:style "text-align:center"}
+ [:img {:src "img/dc_badge.png" :alt "badge"}]]
+
 ;; TODO: 以下の各見出しにidをつけて、目次を作成する
 
 (page-header "News" "更新情報")
@@ -35,6 +39,7 @@
 
 (page-header "Games" "ゲーム")
 (ul [
+     (link "自宅＆ドラゴンズ(仮題)" "games/op0003.html")
      (link "ぶらり猫の旅　地底帝国編" "games/driftcat_underworld.html")
      (link "space drop" "games/space_drop.html")
      ])
@@ -43,6 +48,13 @@
 (page-header "Applications" "アプリ")
 (ul [
      "現在作成中"
+     ])
+
+
+(page-header "Materials" "配布素材")
+(ul [
+     (link "mplus-1mn-medium-16-fnt-tir ビットマップフォント"
+           "materials/mplus-1mn-medium-16-fnt-tir.html")
      ])
 
 

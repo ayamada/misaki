@@ -75,7 +75,7 @@
  (staffs
    [:div (link-with-img "http://libgdx.badlogicgames.com/"
                         "/ja/img/libgdx.png"
-                        "libGDX" "bg-white")]
+                        "libGDX")]
    [:div (link "Clojure" "http://clojure.org/")]
    [:div (link "Clojure for Android" "https://github.com/sattvik/clojure")]
    [:div (link "Clojure REPL for Android" "https://play.google.com/store/apps/details?id=com.sattvik.clojure_repl")]

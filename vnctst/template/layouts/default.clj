@@ -7,8 +7,8 @@
 [:head
  [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
  [:meta {:charset (:charset site)}]
- (when (:date site)
-   [:meta {:http-equiv "Last-Modified" :content (date->last-modified (:date site))}])
+ ;(when (:date site)
+ ;  [:meta {:http-equiv "Last-Modified" :content (date->last-modified (:date site))}])
  (when (:nocache site)
    [:meta {:http-equiv "Pragma" :content "no-cache"}])
  (when (:nocache site)
