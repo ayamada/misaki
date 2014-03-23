@@ -39,9 +39,11 @@
  ]
 
 
-;(heading-2 "License")
-;[:ul [:li [:a {:href "driftcat_underworld_license.html"}
-;           "driftcat_underworld_license.html"]]]
+(heading-2 "License")
+[:div
+ "面倒なのであとでまとめますが、大体"
+ [:a {:href "driftcat_underworld_license.html"} "前作のライセンス"]
+ "と同じです。"]
 
 
 (heading-2 "TODO" "今後の開発予定")
