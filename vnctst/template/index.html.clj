@@ -39,6 +39,7 @@
 
 (page-header "Games" "ゲーム")
 (ul [
+     (link "ジョイメカズーフィロミィ" "games/jmzf.html")
      (link "自宅＆ドラゴンズ(仮題)" "games/op0003.html")
      (link "ぶらり猫の旅　地底帝国編" "games/driftcat_underworld.html")
      (link "space drop" "games/space_drop.html")
