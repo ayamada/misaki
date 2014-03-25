@@ -1,10 +1,10 @@
 ; @layout  post
 ; @title   ジョイメカズーフィロミィ
-; @comment 軽微な追記
+; @comment 0.2.0 リリース
 ; @date 2014/03/25
 ; @nocache true
 
-(def latest-version "0.1.0")
+(def latest-version "0.2.0")
 
 (defn heading-2 [title & [desc]]
   [:div
@@ -26,6 +26,7 @@
 
 
 (heading-2 "Information")
+(p "現在公開中のバージョンは " [:strong latest-version] " です。")
 (p "詳細については、付属のreadme.txtを読んでください。")
 (p "twitterのハッシュタグは"
    " "
@@ -50,11 +51,11 @@
  [:dt "Android版"]
  [:dd "準備中"]
  [:dt "Windows版(要Javaインストール)"]
- [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.1.0-win.zip") " (20M)"]
- [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.1.0-win.zip") " (20M)"]
+ [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.2.0-win.zip") " (20M)"]
+ [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.2.0-win.zip") " (20M)"]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
- [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.1.0-jar.zip") " (20M)"]
- [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.1.0-jar.zip") " (20M)"]
+ [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.2.0-jar.zip") " (20M)"]
+ [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.2.0-jar.zip") " (20M)"]
  [:dt "過去のバージョン"]
  [:dd (link "アーカイブ一覧" "http://vnctst.tir.jp/op0004/?O=D")]
  ]
@@ -69,9 +70,6 @@
 (p "めんどくさくなったらやらないかも")
 (ul [
      [:span "プレイ動画作成"]
-     [:span
-      "「設定」画面の追加"
-      "(音量調節、全画面化、データリセット機能を入れる)"]
      [:span "演出の強化(パーティクル追加等)"]
      [:span "android版のビルドと公開"]
      [:span "ストーリーを考える"]
@@ -82,10 +80,19 @@
 
 (heading-2 "History")
 [:dl
+ [:dt "2013/03/25 version 0.2.0"]
+ [:dd
+  [:ul
+   [:li "設定画面を追加。データリセット、リサイズ許可、音量変更が可能に"]
+   [:li "前回減らした後半ボス撃破ボーナスを少し増やす"]
+   [:li "雑魚敵にHP表示をつけるのを忘れていたので追加"]
+   [:li "音量初期値を50%に変更"]
+   [:li "twitterボタンの文面を少し修正"]
+   ]]
  [:dt "2013/03/24 version 0.1.0"]
  [:dd "重要な変更："
   [:ul
-   [:li "後半面ボスの撃破ボーナスがあまりにも気前良すぎたので微妙に減らす"]
+   [:li "後半面ボスの撃破ボーナスがあまりにも気前良すぎたので減らす"]
    [:li "動物およびボスのHPを表示"]
    [:li "Ｇマシーン拡張ボタンの表示条件を変更 / 更なるＧマシーンの拡張を可能に"]
    [:li "動物の数が十分に多い時の戦闘処理を少し変更"]
