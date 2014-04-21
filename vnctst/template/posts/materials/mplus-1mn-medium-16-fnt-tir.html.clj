@@ -1,7 +1,7 @@
 ; @layout  post
-; @title   mplus-1mn-medium-16-fnt-tir
-; @comment 公開開始
-; @date 2014/03/06
+; @title   mp1mm16tir
+; @comment 更新
+; @date 2014/04/20
 ; @nocache true
 
 (defn heading-2 [title & [desc]]
@@ -11,7 +11,10 @@
    ])
 
 
-(p "M+ 1mn medium を加工したfnt形式のビットマップフォントです。")
+(p "M+ 1m medium を加工したfnt形式のビットマップフォントです。"
+   [:br]
+   "(以前はM+ 1mn mediumベースでした)"
+   )
 (p "詳細についてはgithubのプロジェクトページを参照してください。")
 
 
@@ -22,6 +25,8 @@
 
 (heading-2 "Screenshot")
 
+[:div
+ [:img {:src "../img/mplus-1m-medium-16-fnt-tir-ss.png" :alt "screenshot"}]]
 [:div
  [:img {:src "../img/mplus-1mn-medium-16-fnt-tir-ss.png" :alt "screenshot"}]]
 

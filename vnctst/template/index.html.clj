@@ -54,7 +54,7 @@
 
 (page-header "Materials" "配布素材")
 (ul [
-     (link "mplus-1mn-medium-16-fnt-tir ビットマップフォント"
+     (link "mp1mm16tir ビットマップフォント"
            "materials/mplus-1mn-medium-16-fnt-tir.html")
      ])
 
