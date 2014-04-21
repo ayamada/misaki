@@ -54,6 +54,8 @@
 
 (page-header "Materials" "配布素材")
 (ul [
+     (link "Sound Effects 効果音"
+           "materials/se.html")
      (link "mp1mm16tir ビットマップフォント"
            "materials/mplus-1mn-medium-16-fnt-tir.html")
      ])
