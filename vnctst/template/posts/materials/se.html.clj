@@ -29,15 +29,15 @@
 [:dl
  [:dt "概要"]
  [:dd
-  "昔の店で使われていた、キャッシュレジスター機械の動作音です。"
+  "昔の商店で使われていた、キャッシュレジスター機械の動作音です。"
   [:br]
   "今や機械自体はどこにも見掛けませんが、"
-  "商取引効果音としてミームは現在でも生きているのです。"]
+  "商取引効果音としてのミームは現在でも生きているのです。"]
  [:dt "ソース"]
  [:dd
-  [:ul
-   [:li (link "http://www.freesound.org/people/SoundCollectah/sounds/108278/")]
-   [:li (link "http://www.freesound.org/people/Zott820/sounds/209578/")]]]
+  (link "http://www.freesound.org/people/SoundCollectah/sounds/108278/")
+  [:br]
+  (link "http://www.freesound.org/people/Zott820/sounds/209578/")]
  [:dt "生成手順概要"]
  [:dd "上記ソースより音量調整を行った上で一部を切り出し合成"]
  [:dt "ライセンス"]
@@ -50,7 +50,7 @@
 (heading-2 "Shutter Sound" "カメラのシャッター音")
 [:dl
  [:dt "概要"]
- [:dd "機械式シャッター機構を持っているタイプのカメラの撮影音です。"]
+ [:dd "機械式シャッター機構を持つタイプのカメラの撮影音です。"]
  [:dt "ソース"]
  [:dd (link "http://www.freesound.org/people/uEffects/sounds/207865/")]
  [:dt "生成手順概要"]

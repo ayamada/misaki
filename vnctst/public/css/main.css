@@ -21,9 +21,9 @@ header h1 a {
     text-decoration: none;
     font-size: 0;
     color: white;
-    background: transparent url(../img/vnctst_games_logo_256x192.png) no-repeat top left;
-    width: 256px;
-    height: 192px;
+    background: transparent url(../img/vnctst_eyecatch.png) no-repeat top left;
+    width: 160px;
+    height: 160px;
 }
 header h1 a:hover { opacity: 0.5; }
 header p { margin-top: 0; margin-bottom: 0; color: #444; font-size: 0.8em; }

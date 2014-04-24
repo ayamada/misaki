@@ -22,9 +22,9 @@
   "各種のゲームおよびアプリを公開しています。"
   )
 
-[:div
- {:style "text-align:center"}
- [:img {:src "img/dc_badge.png" :alt "badge"}]]
+;[:div
+; {:style "text-align:center"}
+; [:img {:src "img/dc_badge.png" :alt "badge"}]]
 
 ;; TODO: 以下の各見出しにidをつけて、目次を作成する
 

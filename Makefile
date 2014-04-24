@@ -3,6 +3,7 @@
 
 compile:
 	lein run vnctst --compile
+	#./atom2rss.pl > vnctst/public/rss.xml
 
 
 DEPLOY_DIR := $(shell date +%Y%m%d%H%M%S)
