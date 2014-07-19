@@ -39,6 +39,7 @@
 
 (page-header "Games" "ゲーム")
 (ul [
+     (link "ドリームハイヤー" "games/op0005.html")
      (link "ジョイメカズーフィロミィ" "games/jmzf.html")
      (link "自宅＆ドラゴンズ(仮題)" "games/op0003.html")
      (link "ぶらり猫の旅　地底帝国編" "games/driftcat_underworld.html")
@@ -68,6 +69,11 @@
            [:dt "No Ads - 広告なし"]
            [:dd "「広告」とは「コンテンツに添加物を注入する」ようなものであると考えているので、これは行わない方向とする。"]
            [:dd "利益を上げたい場合は、広告以外の手法(有料販売など)をとる事とする。"]
+           ]]]
+[:ul [:li [:dl
+           [:dt "iOS Later - iOSあとまわし"]
+           [:dd "App Store登録に必要となるiOS Developer Programは年間ライセンス費用がかかる為。"]
+           [:dd "まずdesktop向け/android向けアプリとして作成し、充分に人気が出たのを確認してから、年間ライセンス費用を払い、iOS版を作成する。"]
            ]]]
 [:ul [:li [:dl
            [:dt "etc. - その他"]

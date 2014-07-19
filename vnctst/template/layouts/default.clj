@@ -14,7 +14,7 @@
  (when (:nocache site)
     [:meta {:http-equiv "Cache-Control" :content "no-cache"}])
  [:meta {:name    "viewport"
-         :content "width=device-width, initiali-scale=1.0, user-scalable=yes"}]
+         :content "width=device-width, initial-scale=1.0, user-scalable=yes"}]
 
  [:title
   (if (= (:title site) (:site-title site))

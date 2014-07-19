@@ -31,6 +31,9 @@
  [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.2-windows.zip")]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
  [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.2-jar.zip")]
+ [:dd
+  "※現在Mac上では起動しないようです。"
+  "そのうち時間のある時にビルドし直します。"]
  ]
 
 

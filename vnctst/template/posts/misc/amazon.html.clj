@@ -20,18 +20,9 @@
    "その時はすみませんが一時的に解除をお願いします。)")
 
 ;; メモ:
-;; - amazon.co.jp と javari.jp のトップへのリンク二つを表示する
 ;; - 携帯端末から見る事も考慮し、バナー画像の横幅は最大300までとする
 ;; - iframeはamazon側で勝手に内容を変更されるのが嫌なので避ける
 ;;   (「お得な中古商品はこちら！」とか勝手に変なターゲッティングされる)
-;;   - しかしよく考えたら、 amazon.co.jp は確かにそうだが、
-;;      javari.jp については既にターゲッティングされているので、
-;;      iframeのものでよい、という事にする。
-;;      - 要は、amazon.co.jpでの買い物は誰が何を買うか分からないので
-;;        下手にターゲッティングしてほしくない。
-;;        しかしjavari.jpでの買い物は女性系の人が靴やバッグを買うの確定で、
-;;        既にある程度ターゲッティングされてるので、
-;;        更にターゲッティングされても問題ない、という事
 
 (heading-2 "paypal donation")
 [:div
@@ -60,21 +51,6 @@
  [:script {:charset "utf-8"
            :type "text/javascript"
            :src "http://ws.amazon.co.jp/widgets/q?rt=tf_sw&ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/tirnejp-22/8002/a689f5f6-9676-4615-ace3-46e193dd8c29"} " "]
- ]
-
-
-(heading-2 "javari.jp")
-[:div
- {:style "margin:1em"}
- [:iframe {:src "http://rcm-jp.amazon.co.jp/e/cm?t=tirnejp-22&o=9&p=42&l=ur1&category=endless&m=endless&f=ifr"
-           :width 234
-           :height 60
-           :scrolling "no"
-           :border 0
-           :marginwidth 0
-           :style "border:none;"
-           :frameborder 0
-           }]
  ]
 
 

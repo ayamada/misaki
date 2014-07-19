@@ -1,10 +1,10 @@
 ; @layout  post
 ; @title   ジョイメカズーフィロミィ
-; @comment 0.4.0 リリース
-; @date 2014/04/21
+; @comment Android版リリース
+; @date 2014/05/06
 ; @nocache true
 
-(def latest-version "0.4.0")
+(def latest-version "0.4.2")
 
 (defn heading-2 [title & [desc]]
   [:div
@@ -21,13 +21,12 @@
    "24時間徹夜のテンションでがんばって作った。"
    "その結果、遊ぶ方にも24時間徹夜のテンションが必要となった感がある。"
    )
-(p "ブラゲじゃなくてごめんなさい。"
-   "遊ぶのめんどくさいという人のために、あとで動画用意します。")
 
 
-(heading-2 "Information")
-(p "現在公開中のバージョンは " [:strong latest-version] " です。")
-(p "詳細については、付属のreadme.txtを読んでください。")
+(heading-2 "Information" "情報")
+(p "現在公開中のバージョンは "
+   (link [:strong latest-version] "#History")
+   " です。")
 (p "twitterのハッシュタグは"
    " "
    [:a
@@ -38,44 +37,61 @@
    )
 
 
-(heading-2 "Movie")
+(heading-2 "Movie" "動画")
 (ul [
+     [:span (link "http://www.nicovideo.jp/watch/sm23494612") " (ニコ動)"]
      ;[:span (link "http://www.youtube.com/watch?v=E3f7Sc5aVA0") " (youtube)"]
-     ;[:span (link "http://www.nicovideo.jp/watch/sm23000695") " (ニコ動)"]
-     [:span "準備中"]
      ])
 
 
-(heading-2 "Download")
+(heading-2 "Download" "ダウンロード")
 [:dl
  [:dt "Android版"]
- [:dd "準備中"]
+ [:dd [:a {:href "https://play.google.com/store/apps/details?id=jp.tir.vnctst.op0004"}
+       "https://play.google.com/store/apps/details?id=jp.tir.vnctst.op0004"
+       [:br]
+       [:img {:alt "Get it on Google Play" :src "http://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}]]]
  [:dt "Windows版(要Javaインストール)"]
- [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.4.0-win.zip") " (18M)"]
- [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.4.0-win.zip") " (18M)"]
+ [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.4.2-win.zip") " (18M)"]
+ [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.4.2-win.zip") " (18M)"]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
- [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.4.0-jar.zip") " (18M)"]
- [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.4.0-jar.zip") " (18M)"]
+ [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.4.2-jar.zip") " (18M)"]
+ [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.4.2-jar.zip") " (18M)"]
  [:dt "過去のバージョン"]
  [:dd (link "アーカイブ一覧" "http://vnctst.tir.jp/op0004/?O=D")]
  ]
 
 
-(heading-2 "License")
-[:div
- "めんどいので、あとでまとめます。"]
-
-
-(heading-2 "TODO" "今後の開発予定")
-(p "めんどくさくなったらやらないかも")
-(ul [
-     [:span "プレイ動画作成"]
-     [:span "android版のビルドと公開"]
-     [:span "チュートリアル中に金がなくなった時の救済処理"]
-     ])
-
-(heading-2 "History")
+(heading-2 "Staff" "製作者および利用物など")
+[:p "めんどいので重要なもののみ記載しています。それぞれのライセンスについてはリンクを辿ってください。"]
 [:dl
+ [:dt "利用フレームワーク/ライブラリ"]
+ [:dd
+  (link "CLAN" "https://github.com/ayamada/clan")
+  ", "
+  (link "libGDX" "http://libgdx.badlogicgames.com/")
+  ", その他Java, Clojure用ライブラリいろいろ"]
+ [:dt "フォント"]
+ [:dd (link "mp1mm16tir" "https://github.com/ayamada/mplus-1mn-medium-16-fnt-tir")]
+ [:dt "ＢＧＭ"]
+ [:dd
+  (link "ニコニコ自作ゲームフェス用ニコ素材"
+        "http://commons.nicovideo.jp/user/upload/659862?t=audio")]
+ [:dt "企画、プログラミング、グラフィック、写真撮影、効果音、その他いろいろ"]
+ [:dd "技情研ネット 山田"]
+ ]
+
+
+(heading-2 "History" "更新履歴")
+[:dl
+ [:dt "2013/05/06 version 0.4.2 Android版を公開"]
+ [:dd
+  [:ul
+   [:li "Android版をデプロイ"]
+   [:li "Ｇマシーン微調整"]
+   [:li "「撮影」回りの微調整"]
+   [:li "あちこちの処理の軽量化"]
+   ]]
  [:dt "2013/04/21 version 0.4.0"]
  [:dd
   [:ul
