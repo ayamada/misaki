@@ -1,7 +1,7 @@
 ; @layout  post
 ; @title   Sound Effects
-; @comment 作成
-; @date 2014/04/22
+; @comment キャッシュレジスター音にバリエーション追加
+; @date 2014/07/21
 ; @nocache true
 
 (defn heading-2 [title & [desc]]
@@ -43,7 +43,10 @@
  [:dt "ライセンス"]
  [:dd "CC0"]
  [:dt "試聴兼ダウンロード"]
- [:dd (link "buy.ogg" "../se/buy.ogg")]
+ [:dd (link "buy.ogg" "../se/buy.ogg")
+  " - 最初に作ったもの。音量でかい。"]
+ [:dd (link "buy2.ogg" "../se/buy2.ogg")
+  " - ローパスフィルタにかけ、少しくぐもった感じにしたもの。普通の音量。"]
  ]
 
 

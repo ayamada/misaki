@@ -32,7 +32,7 @@
 
 (heading-2 "Staff" "製作者および利用素材など")
 [:dl
- [:dt "利用システム"]
+ [:dt "ミドルウェア"]
  [:dd (link "Unity" "http://japan.unity3d.com/unity/")]
  [:dt "フォント"]
  [:dd (link "mp1mm16tir" "https://github.com/ayamada/mplus-1mn-medium-16-fnt-tir")]
@@ -46,7 +46,7 @@
   "様の"
   (link "学校_教室_窓側" "http://www5d.biglobe.ne.jp/~gakai/")
   [:br]
-  "(加工：技情研ネット 山田)"
+  "(下手な加工：技情研ネット 山田)"
   ]
  [:dt "利用させていただいた、他者作成のモンスター画像"]
  [:dd
@@ -62,7 +62,7 @@
  [:dd "Unity標準アセットのSkybox"]
  [:dd (link "Particle Cloud Package" "http://forum.unity3d.com/threads/particle-cloud-package.54833/") "の雲"]
  [:dd (link "UnitySkyboxShaders" "https://github.com/keijiro/UnitySkyboxShaders")]
- [:dt "企画、プログラミング、その他グラフィック、効果音、その他いろいろ"]
+ [:dt "企画、プログラミング、素材加工、残りグラフィック、効果音、その他いろいろ"]
  [:dd "技情研ネット 山田"]
  ]
 
