@@ -38,13 +38,11 @@
 
 
 (page-header "Games" "ゲーム")
-(ul [
-     (link "ドリームハイヤー" "games/op0005.html")
-     (link "ジョイメカズーフィロミィ" "games/jmzf.html")
-     (link "自宅＆ドラゴンズ(仮題)" "games/op0003.html")
-     (link "ぶらり猫の旅　地底帝国編" "games/driftcat_underworld.html")
-     (link "space drop" "games/space_drop.html")
-     ])
+[:p
+ "ゲームの一覧は、"
+ (link "Indie Stream内VNCTST gamesページ"
+       "https://indie-stream.net/userpage/vnctst_games")
+ "に移動しました。"]
 
 
 (page-header "Applications" "アプリ")
