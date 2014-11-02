@@ -18,7 +18,7 @@
 
 (header
   (:title site)
-  "VNCTST games では、Android向け/デスクトップOS向けの"
+  "VNCTST games では、"
   "各種のゲームおよびアプリを公開しています。"
   )
 
@@ -101,16 +101,6 @@
 
 (heading-2 "About" "いろいろ")
 [:ul
- [:li
-  "VNCTST games のゲームは、"
-  (link "技情研ネット" "http://tir.jp/")
-  "が"
-  (link "CLAN" "https://github.com/ayamada/clan")
-  "を使い開発しています。"]
- [:li
-  "android版のゲーム/アプリは、"
-  (link "Sony Tablet S" "http://www.sony.jp/tablet/products/S1/")
-  "にて動作確認を行っています。"]
  [:li
   [:div
    "このサイトでは、ウェブサイト構築システムとして"
