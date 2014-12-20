@@ -47,16 +47,22 @@
 (heading-2 "Download" "ダウンロード")
 [:dl
  [:dt "Android版"]
- [:dd [:a {:href "https://play.google.com/store/apps/details?id=jp.tir.vnctst.op0004"}
-       "https://play.google.com/store/apps/details?id=jp.tir.vnctst.op0004"
-       [:br]
-       [:img {:alt "Get it on Google Play" :src "http://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}]]]
+ [:dd
+  [:a {:href "https://play.google.com/store/apps/details?id=jp.tir.vnctst.op0004"}
+   "https://play.google.com/store/apps/details?id=jp.tir.vnctst.op0004"
+   [:br]
+   [:img {:alt "Get it on Google Play" :src "http://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}]]
+  [:br]
+  "※最近のART対応のAndroid端末では動きません"]
  [:dt "Windows版(要Javaインストール)"]
  [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.4.2-win.zip") " (18M)"]
  [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.4.2-win.zip") " (18M)"]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
  [:dd "version-" latest-version "を" (link "tir.jpサーバからダウンロード" "http://vnctst.tir.jp/op0004/jmzf-0.4.2-jar.zip") " (18M)"]
  [:dd "version-" latest-version "を" (link "dropboxサーバからダウンロード" "https://dl.dropboxusercontent.com/u/9755436/op0004/jmzf-0.4.2-jar.zip") " (18M)"]
+ [:dd
+  "※最近のMac上では動かないようです。"
+  "対応するのも面倒なので、Macは非対応という事にしておきます。"]
  [:dt "過去のバージョン"]
  [:dd (link "アーカイブ一覧" "http://vnctst.tir.jp/op0004/?O=D")]
  ]

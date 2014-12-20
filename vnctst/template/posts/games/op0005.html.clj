@@ -1,6 +1,6 @@
 ; @layout  post
 ; @title   ドリームハイヤー
-; @comment ページ作成
+; @comment 公開
 ; @date 2014/07/19
 ; @nocache true
 

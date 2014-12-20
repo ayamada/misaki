@@ -36,6 +36,9 @@
  [:dd "mac/linux向けデモ版(0.0.2-demo 27M)"
   (ul [[:a {:href "http://vnctst.tir.jp/op0003/op0003-0.0.2-demo-jar.zip"} "tir.jpサーバからダウンロード"]
        [:a {:href "https://dl.dropboxusercontent.com/u/9755436/op0003/op0003-0.0.2-demo-jar.zip"} "dropbox.comサーバからダウンロード(予備)"]])]
+ [:dd
+  "※最近のMac上では動かないようです。"
+  "対応するのも面倒なので、Macは非対応という事にしておきます。"]
  ]
 
 

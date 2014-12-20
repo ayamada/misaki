@@ -23,17 +23,20 @@
 (heading-2 "Download")
 [:dl
  [:dt "Android版"]
- [:dd [:a {:href "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld"}
-       "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld"
-       [:br]
-       [:img {:alt "Get it on Google Play" :src "http://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}]]]
+ [:dd
+  [:a {:href "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld"}
+   "https://play.google.com/store/apps/details?id=jp.ne.tir.vnctst.android.underworld"
+   [:br]
+   [:img {:alt "Get it on Google Play" :src "http://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}]]
+  [:br]
+  "※最近のART対応のAndroid端末では動きません"]
  [:dt "Windows版(要Javaインストール)"]
  [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.2-windows.zip")]
  [:dt "Windows以外デスクトップOS版(要Javaインストール)"]
  [:dd (link "https://dl.dropbox.com/u/9755436/dcuw/dcuw-1.2.2-jar.zip")]
  [:dd
-  "※現在Mac上では起動しないようです。"
-  "そのうち時間のある時にビルドし直します。"]
+  "※最近のMac上では動かないようです。"
+  "対応するのも面倒なので、Macは非対応という事にしておきます。"]
  ]
 
 
