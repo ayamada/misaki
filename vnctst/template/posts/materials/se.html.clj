@@ -18,7 +18,7 @@
   "ここでは、外部サイトにて"
   (link "Public Domain" "http://ja.wikipedia.org/wiki/%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3")
   "もしくは"
-  (link "CC0" "http://sciencecommons.jp/cc0/about")
+  (link "CC0" "https://creativecommons.org/choose/zero/?lang=ja")
   "のライセンスで公開されている音源を加工して生成した効果音を公開します。"]
  [:li "各効果音のライセンスは元の音源に準じます。"]
  [:li "ダウンロードリンクより、ブラウザからの右クリック等を使い保存してください。"]
