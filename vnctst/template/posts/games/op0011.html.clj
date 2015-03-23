@@ -5,6 +5,7 @@
 ; @nocache true
 
 (def latest-version "0.1.2")
+(def latest-version-date "2015/03/23")
 
 (defn heading-2 [title & [desc]]
   [:div
@@ -12,6 +13,8 @@
    (if desc (p {:class "desc"} desc) "")
    ])
 
+
+(p {:class "desc"} "version: " latest-version " (" latest-version-date ")")
 
 (p [:a {:href "http://ahoge.info/16/index.php#21"} "あほげー第16回"]
    "エントリー作品「おはぎ鉱山トンネル」取扱説明書ページです。")
@@ -48,7 +51,7 @@
 
 (heading-2 "History" "更新履歴")
 [:dl
- [:dt "2015/03/22 version 0.1.2"]
+ [:dt "2015/03/23 version 0.1.2"]
  [:dd [:ul [:li "極稀にセーブデータのロードに失敗する問題を修正"]]]
  [:dt "2015/03/22 version 0.1.1"]
  [:dd
