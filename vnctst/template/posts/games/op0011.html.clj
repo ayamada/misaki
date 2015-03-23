@@ -1,6 +1,6 @@
 ; @layout  post
 ; @title   おはぎ鉱山トンネル
-; @comment version 0.1.2
+; @comment version 0.1.2 不具合修正
 ; @date 2015/03/23
 ; @nocache true
 
