@@ -1,11 +1,11 @@
 ; @layout  post
 ; @title   おはぎ鉱山トンネル
-; @comment version 0.1.2 不具合修正
-; @date 2015/03/23
+; @comment version 0.2.0
+; @date 2015/03/28
 ; @nocache true
 
-(def latest-version "0.1.2")
-(def latest-version-date "2015/03/23")
+(def latest-version "0.2.0")
+(def latest-version-date "2015/03/28")
 
 (defn heading-2 [title & [desc]]
   [:div
@@ -13,44 +13,60 @@
    (if desc (p {:class "desc"} desc) "")
    ])
 
+(defn a-href-external [url & [label]]
+  [:a {:href url, :target "_blank"} (or label url)])
+
+
+
+
+
+
+
+
 
 (p {:class "desc"} "version: " latest-version " (" latest-version-date ")")
 
-(p [:a {:href "http://ahoge.info/16/index.php#21"} "あほげー第16回"]
+(p (a-href-external "http://ahoge.info/16/index.php#21" "あほげー第16回")
    "エントリー作品「おはぎ鉱山トンネル」取扱説明書ページです。")
 
-[:ul
- [:li "詳細はあとで書きます"]]
+;[:ul
+; [:li "詳細はあとで書きます"]]
 
 
 (heading-2 "Play" "遊ぶ")
-[:ul [:li [:a {:href "/op0011/" :target "_blank"} "http://vnctst.tir.jp/op0011/"]]]
+[:ul [:li (a-href-external "/op0011/" "http://vnctst.tir.jp/op0011/")]]
 
 
 (heading-2 "Staff" "製作者および利用素材など")
 
-(p "あとでかく")
-;[:ul
-; [:li "めんどいので大部分のリンクは省略してます。必要ならぐぐってください。"]]
-;
-;[:dl
-; [:dt "ライブラリ類"]
-; [:dd "ClojureScript"]
-; [:dd "pixi.js"]
-; [:dd "howler.js"]
-; [:dt "フォント"]
-; [:dd (link "M+ 1M bold" "http://mplus-fonts.sourceforge.jp/")]
-; [:dt "ＢＧＭ"]
-; [:dd
-;  (link "ニコニコ自作ゲームフェス用ニコ素材"
-;        "http://commons.nicovideo.jp/user/upload/659862?t=audio")]
-; [:dt "企画、プログラミング、グラフィック、効果音、その他いろいろ"]
-; [:dd "技情研ネット 山田"]
-; ]
+[:dl
+ [:dt "ライブラリ類"]
+ [:dd (a-href-external "https://github.com/clojure/clojurescript" "ClojureScript")]
+ [:dd (a-href-external "http://www.pixijs.com/" "pixi.js")]
+ [:dd (a-href-external "http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library" "howler.js")]
+ [:dd (a-href-external "http://pieroxy.net/blog/pages/lz-string/index.html" "lz-string")]
+ [:dd (a-href-external "http://labs.cybozu.co.jp/blog/mitsunari/2007/07/md5js_1.html" "md5.js")]
+ [:dt "フォント"]
+ [:dd (a-href-external "http://mplus-fonts.sourceforge.jp/" "M+ 1M bold")]
+ [:dt "ＢＧＭ"]
+ [:dd (a-href-external "http://commons.nicovideo.jp/user/upload/659862?t=audio"
+                       "ニコニコ自作ゲームフェス用ニコ素材")]
+ [:dt "企画、プログラミング、グラフィック、効果音、その他いろいろ"]
+ [:dd "技情研ネット 山田"]
+ ]
 
 
 (heading-2 "History" "更新履歴")
 [:dl
+ [:dt "2015/03/28 version 0.2.0"]
+ [:dd
+  [:ul
+   [:li "イベントとギミックを多数追加"]
+   [:li "ゲームバランス調整"]
+   [:li "ステータスウィンドウの改善"]
+   [:li "前進、ダメージ等の演出を強化"]
+   [:li "その他、軽微な修正多数"]
+   ]]
  [:dt "2015/03/23 version 0.1.2"]
  [:dd [:ul [:li "極稀にセーブデータのロードに失敗する問題を修正"]]]
  [:dt "2015/03/22 version 0.1.1"]
