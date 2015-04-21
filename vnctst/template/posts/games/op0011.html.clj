@@ -1,11 +1,11 @@
 ; @layout  post
 ; @title   おはぎ鉱山トンネル
-; @comment version 0.2.0
-; @date 2015/03/28
+; @comment version 0.2.1
+; @date 2015/04/20
 ; @nocache true
 
-(def latest-version "0.2.0")
-(def latest-version-date "2015/03/28")
+(def latest-version "0.2.1")
+(def latest-version-date "2015/04/20")
 
 (defn heading-2 [title & [desc]]
   [:div
@@ -29,8 +29,7 @@
 (p (a-href-external "http://ahoge.info/16/index.php#21" "あほげー第16回")
    "エントリー作品「おはぎ鉱山トンネル」取扱説明書ページです。")
 
-;[:ul
-; [:li "詳細はあとで書きます"]]
+[:ul [:li "略称は「おは鉱」。"]]
 
 
 (heading-2 "Play" "遊ぶ")
@@ -61,6 +60,8 @@
 
 (heading-2 "History" "更新履歴")
 [:dl
+ [:dt "2015/04/20 version 0.2.1"]
+ [:dd [:ul [:li "chromeでBGMがループしない問題を修正"]]]
  [:dt "2015/03/28 version 0.2.0"]
  [:dd
   [:ul

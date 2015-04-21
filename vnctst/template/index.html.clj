@@ -41,7 +41,7 @@
 [:ul [:li
       "完成したゲームの一覧は、"
       (link "Indie Stream内VNCTST gamesページ"
-            "http://indie-stream.net/userpage/vnctst_games")
+            "https://indie-stream.net/userpage/vnctst_games")
       "に移動しました。"]]
 
 ;[:p "開発一時中止中の(未完成の)ゲームについて"]

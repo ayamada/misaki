@@ -1,10 +1,10 @@
 ; @layout  post
 ; @title   トミーパトロール
-; @comment version 0.1.2
-; @date 2014/11/04
+; @comment version 0.1.3
+; @date 2015/04/20
 ; @nocache true
 
-(def latest-version "0.1.1")
+(def latest-version "0.1.3")
 
 (defn heading-2 [title & [desc]]
   [:div
@@ -56,6 +56,10 @@
 
 (heading-2 "History" "更新履歴")
 [:dl
+ [:dt "2015/04/20 version 0.1.3"]
+ [:dd "chromeでBGMがループしない問題を修正"]
+ [:dd "safariでも動くようにする"]
+ [:dd "ボス出現位置を少し近くする"]
  [:dt "2014/11/04 version 0.1.2 バランス調整"]
  [:dd "ジャンプ力と重力を変更"]
  [:dd "敵の速度を微調整"]
