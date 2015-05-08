@@ -1,9 +1,9 @@
 ; @layout post
 ; @nocache true
 ; @title スーパーマーケマンサー
-; @version 0.2.4
-; @comment version 0.2.4
-; @date 2015/04/21
+; @version 0.4.1
+; @comment version 0.4.1
+; @date 2015/04/24
 
 (defn site->date [site]
   (let [dtf (org.joda.time.format.DateTimeFormat/forPattern "yyyy/MM/dd")]
@@ -47,7 +47,7 @@
  [:dt "ライブラリ類"]
  [:dd (a-href-external "https://github.com/clojure/clojurescript" "ClojureScript")]
  [:dd (a-href-external "http://www.pixijs.com/" "pixi.js")]
- [:dd (a-href-external "http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library" "howler.js")]
+ [:dd (a-href-external "https://github.com/CyberAgent/boombox.js" "boombox.js")]
  [:dd (a-href-external "http://pieroxy.net/blog/pages/lz-string/index.html" "lz-string")]
  [:dd (a-href-external "http://labs.cybozu.co.jp/blog/mitsunari/2007/07/md5js_1.html" "md5.js")]
  [:dt "フォント"]
@@ -65,6 +65,22 @@
 
 (heading-2 "History" "更新履歴")
 [:dl
+ [:dt "2015/04/24 version 0.4.1"]
+ [:dd [:ul [:li "firefoxでたまに効果音が途切れる事がある不具合を修正"]]]
+ [:dt "2015/04/24 version 0.4.0"]
+ [:dd [:ul
+       [:li "ダイアログ回りの不具合を修正"]
+       [:li "商品の価格表記を実際のスーパーに合わせて外税表記にする"]
+       [:li "商品の価格設定をよりそれらしく改善"]
+       [:li "リザルト画面での表示情報を少し追加"]
+       ]]
+ [:dt "2015/04/23 version 0.3.0"]
+ [:dd [:ul [:li "音回りの不具合を修正"]]]
+ [:dt "2015/04/22 version 0.2.5"]
+ [:dd [:ul
+       [:li "Android, iOSで動かなかった不具合を修正"]
+       [:li "各種のモバイル向けの微調整"]
+       ]]
  [:dt "2015/04/21 version 0.2.4"]
  [:dd [:ul
        [:li "ゲーム画面のブラウザ内最大化機能を追加"]

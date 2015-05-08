@@ -107,17 +107,17 @@
 
 (heading-2 "About" "いろいろ")
 [:ul
- [:li
-  [:div
-   "このサイトでは、ウェブサイト構築システムとして"
-   (link "misaki" "https://github.com/liquidz/misaki")
-   "をカスタマイズし使用しています。"]
-  [:ul [:li
-        "あまりきちんとコードを管理はしてないですが、 "
-        (link "https://github.com/ayamada/misaki"
-              "https://github.com/ayamada/misaki")
-        " にカスタマイズ内容およびテンプレートそのものを"
-        "保存しています。"]]]
+ ;[:li
+ ; [:div
+ ;  "このサイトでは、ウェブサイト構築システムとして"
+ ;  (link "misaki" "https://github.com/liquidz/misaki")
+ ;  "をカスタマイズし使用しています。"]
+ ; [:ul [:li
+ ;       "あまりきちんとコードを管理はしてないですが、 "
+ ;       (link "https://github.com/ayamada/misaki"
+ ;             "https://github.com/ayamada/misaki")
+ ;       " にカスタマイズ内容およびテンプレートそのものを"
+ ;       "保存しています。"]]]
  [:li
   "以下は VNCTST games のバナーです。"
   "リンクの際にお使いください。"
