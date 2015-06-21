@@ -34,7 +34,15 @@
 (p (a-href-external "http://ahoge.info/1000/index.php#41" "超あほげー")
    "エントリー作品「スーパーマーケマンサー」取扱説明書ページです。")
 
-[:ul [:li "略称は「スママ」。"]]
+[:ul
+ [:li "略称は「スママ」。"]
+ [:li
+  "まともに遊べる続編ができました。"
+  "→"
+  "『"
+  (a-href "op0012-3.html" "キャプテンスーパーマーケマンサー")
+  "』"
+  ]]
 
 
 (heading-2 "Play" "遊ぶ")
@@ -55,9 +63,9 @@
  [:dt "ＢＧＭ"]
  [:dd (a-href-external "http://commons.nicovideo.jp/user/upload/659862?t=audio"
                        "ニコニコ自作ゲームフェス用ニコ素材")]
- ;[:dt "辞書データ"]
- ;[:dd (a-href-external "http://www.dsri.jp/company/jicfsifdb/top.htm"
- ;                      "JICFS分類コード一覧")]
+ [:dt "辞書データ"]
+ [:dd (a-href-external "http://www.dsri.jp/company/jicfsifdb/top.htm"
+                       "JICFS分類コード一覧") "を参考に作成"]
  [:dt "企画、プログラミング、グラフィック、効果音、その他いろいろ"]
  [:dd "技情研ネット 山田"]
  ]

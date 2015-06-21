@@ -52,7 +52,7 @@
                        "ニコニコ自作ゲームフェス用ニコ素材")]
  [:dt "名前辞書"]
  [:dd (a-href-external "http://sourceforge.jp/projects/naist-jdic/"
-                       "naist-jdic")]
+                       "naist-jdic") "より加工して利用"]
  [:dt "企画、プログラミング、グラフィック、効果音、その他いろいろ"]
  [:dd "技情研ネット 山田"]
  ]
