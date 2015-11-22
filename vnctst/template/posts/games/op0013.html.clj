@@ -49,7 +49,7 @@
 (p {:class "desc"} "version: " (:version site) " (" (site->date site) ")")
 
 (p
- (a-href-external "http://ahoge.info/18/index.php" "第18回あほげー")
+ (a-href-external "http://ahoge.info/18/index.php#52" "第18回あほげー")
  "エントリー作品"
  "「フェムトプレゼンター」取扱説明書ページです。")
 
