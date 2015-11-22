@@ -1,8 +1,8 @@
 ; @layout post
 ; @nocache true
 ; @title フェムトプレゼンター
-; @version 0.1.0
-; @comment version 0.1.0
+; @version 0.1.1
+; @comment version 0.1.1
 ; @date 2015/11/22
 
 (defn site->date [site]
@@ -75,6 +75,8 @@
 (heading-2 "History" "更新履歴")
 
 [:dl
+ [:dt "2015/11/22 version 0.1.1"]
+ [:dd [:ul [:li "倍率を厳密に表示するようにした"]]]
  [:dt "2015/11/22 version 0.1.0 あほげー登録バージョン"]
  [:dd [:ul [:li "公開"]]]
  ]
@@ -92,11 +94,6 @@
  [:dt "企画、プログラミング、グラフィック、効果音、その他いろいろ"]
  [:dd "技情研ネット 山田"]
  ]
-
-
-(heading-2 "TODO")
-
-[:ul [:li "拡大率が大きくなりすぎた時の指数表示の抑制"]]
 
 
 
