@@ -1,19 +1,35 @@
 ; @layout post
 ; @nocache true
 ; @title キャプテンスーパーマーケマンサー
-; @version 2.16.3
-; @comment version 2.16.3
-; @date 2015/06/21
+; @version 2.16.4
+; @comment version 2.16.4
+; @date 2015/06/23
 
 (defn site->date [site]
   (let [dtf (org.joda.time.format.DateTimeFormat/forPattern "yyyy/MM/dd")]
     (.print dtf (:date site))))
 
-(defn heading-2 [title & [desc]]
-  [:div
-    (h2 {:id title} title)
-   (if desc (p {:class "desc"} desc) "")
-   ])
+
+;;; heading-2は自動的にtocとして扱う
+(def toc-entries (atom []))
+(defmacro heading-2 [title & [desc]]
+  (swap! toc-entries conj [title desc])
+  `(let [title# ~title
+         desc# ~desc]
+     [:div
+      (h2 {:id title#} title#)
+      (if desc# (p {:class "desc"} desc#) "")
+      ]))
+
+(defn toc []
+  (let [lis (map (fn [[title desc]]
+                   (let [url (str "#" title)
+                         label (if desc
+                                 (str title " - " desc)
+                                 title)]
+                     [:li (a-href url label)]))
+                 @toc-entries)]
+    `[:ul ~@lis]))
 
 (defn a-href [url & [label]]
   [:a {:href url} (or label url)])
@@ -42,8 +58,16 @@
   (a-href "op0012.html" "スーパーマーケマンサー")
   "』"
   "の続編です。"]
- [:li "ダンジョン探索RPGです。"]
+ [:li "ダンジョン攻略RPGです。"]
  ]
+
+
+[:div
+ (h2 {:id "toc"} "Table of Contents")
+ (p {:class "desc"} "目次")]
+
+(toc)
+
 
 
 (heading-2 "Play" "遊ぶ")
@@ -51,9 +75,19 @@
 
 
 
+(heading-2 "Movie" "紹介動画")
+[:ul
+ (li (a-href-external "http://www.nicovideo.jp/watch/sm26545586")
+     " (ニコニコ動画)")
+ (li (a-href-external "https://youtu.be/unuKL18mzpA")
+     " (youtube)")]
+
+
 
 (heading-2 "History" "更新履歴")
 [:dl
+ [:dt "2015/06/23 version 2.16.4"]
+ [:dd [:ul (li "各マップ名および一部のメッセージを微変更")]]
  [:dt "2015/06/21 version 2.16.3"]
  [:dd [:ul
        (li "2.16.2での修正によって、敵のシールドのエフェクト文字の表示が"
@@ -428,14 +462,13 @@
 
 
 
-(heading-2 "TODO" "残り作業項目")
+(heading-2 "TODO" "作業予定項目")
 [:ul
  [:li "音量設定機能"]
  [:li "イベント追加"]
  [:li "エンドレスモードの実装"]
- [:li "紹介動画の作成"]
- [:li "キーボード操作対応"]
  [:li "クエスト実装"]
+ [:li "キーボード操作対応"]
  [:li "第二部の作成"]
  ]
 
