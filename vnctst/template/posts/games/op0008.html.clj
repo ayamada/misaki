@@ -13,7 +13,7 @@
    ])
 
 
-(p [:a {:href "http://ahoge.info/15/index.php#39"} "あほげー第15回"]
+(p [:a {:href "http://ahoge.info/"} "あほげー第15回"]
    "エントリー作品「トミーパトロール」紹介ページです。")
 
 [:ul

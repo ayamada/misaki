@@ -26,7 +26,7 @@
 
 (p {:class "desc"} "version: " latest-version " (" latest-version-date ")")
 
-(p (a-href-external "http://ahoge.info/16/index.php#21" "あほげー第16回")
+(p (a-href-external "http://ahoge.info/" "あほげー第16回")
    "エントリー作品「おはぎ鉱山トンネル」取扱説明書ページです。")
 
 [:ul [:li "略称は「おは鉱」。"]]

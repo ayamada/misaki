@@ -1,9 +1,9 @@
 ; @layout post
 ; @nocache true
 ; @title フェムトプレゼンター
-; @version 0.1.1
-; @comment version 0.1.1
-; @date 2015/11/22
+; @version 0.1.2
+; @comment version 0.1.2
+; @date 2015/11/23
 
 (defn site->date [site]
   (let [dtf (org.joda.time.format.DateTimeFormat/forPattern "yyyy/MM/dd")]
@@ -49,7 +49,7 @@
 (p {:class "desc"} "version: " (:version site) " (" (site->date site) ")")
 
 (p
- (a-href-external "http://ahoge.info/18/index.php#52" "第18回あほげー")
+ (a-href-external "http://ahoge.info/" "第18回あほげー")
  "エントリー作品"
  "「フェムトプレゼンター」取扱説明書ページです。")
 
@@ -75,6 +75,11 @@
 (heading-2 "History" "更新履歴")
 
 [:dl
+ [:dt "2015/11/23 version 0.1.2"]
+ [:dd [:ul
+       [:li "android/iOSで動かなかった不具合を修正"]
+       [:li "ツイート文章を少し変更"]
+       ]]
  [:dt "2015/11/22 version 0.1.1"]
  [:dd [:ul [:li "倍率を厳密に表示するようにした"]]]
  [:dt "2015/11/22 version 0.1.0 あほげー登録バージョン"]

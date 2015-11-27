@@ -31,7 +31,7 @@
 
 (p {:class "desc"} "version: " (:version site) " (" (site->date site) ")")
 
-(p (a-href-external "http://ahoge.info/1000/index.php#41" "超あほげー")
+(p (a-href-external "http://ahoge.info/chou/" "超あほげー")
    "エントリー作品「スーパーマーケマンサー」取扱説明書ページです。")
 
 [:ul
