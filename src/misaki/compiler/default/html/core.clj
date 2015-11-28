@@ -415,10 +415,10 @@
    (ul
      #(list*
         (date/date->string (:date %))
-        "&nbsp;-&nbsp;"
+        " - "
         (link (:title %) (:url %))
         (if (:comment %)
-          (list "&nbsp;-&nbsp;" (:comment %))
+          (list " - " (:comment %))
           nil))
      attr
      (:posts *site*))))

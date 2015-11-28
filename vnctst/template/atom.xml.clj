@@ -21,10 +21,10 @@
      [:ul
       [:li
        (misaki.util.date/date->string (:date post))
-       "&nbsp;-&nbsp;"
+       " - "
        (link (:title post) (:url post))
        (if (:comment post)
-         (str "&nbsp;-&nbsp;" (:comment post))
+         (str " - " (:comment post))
          "")]]
      ]])]
 
