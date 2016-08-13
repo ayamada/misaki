@@ -38,11 +38,18 @@
 
 
 (page-header "Games" "ゲーム")
-[:ul [:li
-      "完成したゲームの一覧は、"
-      (link "Indie Stream内VNCTST gamesページ"
-            "https://indie-stream.net/userpage/vnctst_games")
-      "に移動しました。"]]
+[:ul
+ [:li
+  "完成したゲームの一覧は、"
+  (link "Indie Stream内VNCTST gamesページ"
+        "https://indie-stream.net/userpage/vnctst_games")
+  "に移動しました。"]
+ [:li
+  "現在の代表作は「"
+  (link "キャプテンスーパーマーケマンサー"
+        "games/op0012-3.html")
+  "」です。"]
+ ]
 
 ;[:p "開発一時中止中の(未完成の)ゲームについて"]
 ;
