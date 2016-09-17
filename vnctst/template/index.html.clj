@@ -79,6 +79,13 @@
      ])
 
 
+(page-header "Libraries" "ライブラリ")
+(ul [
+     [:a {:href "https://github.com/ayamada/vnctst-audio3" :target "_blank"}
+      "html5環境でのゲーム向け音響ファイル再生ライブラリ vnctst-audio3"]
+     ])
+
+
 (page-header "Information" "関連情報など")
 
 (heading-2 "Policy" "VNCTST gamesの方針")
