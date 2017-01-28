@@ -49,6 +49,11 @@
   (link "キャプテンスーパーマーケマンサー"
         "games/op0012-3.html")
   "」です。"]
+ [:li
+  "上記とは別に、ゲーム未満の"
+  (link "実験作"
+        "games/experimental.html")
+  "を集めたページを作成しました。"]
  ]
 
 ;[:p "開発一時中止中の(未完成の)ゲームについて"]
@@ -81,8 +86,8 @@
 
 (page-header "Libraries" "ライブラリ")
 (ul [
-     [:a {:href "https://github.com/ayamada/vnctst-audio3" :target "_blank"}
-      "html5環境でのゲーム向け音響ファイル再生ライブラリ vnctst-audio3"]
+     [:a {:href "https://github.com/ayamada/vnctst-audio4" :target "_blank"}
+      "html5環境でのゲーム向け音響ファイル再生ライブラリ vnctst-audio4"]
      ])
 
 
