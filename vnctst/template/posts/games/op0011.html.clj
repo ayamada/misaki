@@ -14,7 +14,7 @@
    ])
 
 (defn a-href-external [url & [label]]
-  [:a {:href url, :target "_blank"} (or label url)])
+  [:a {:href url, :target "_blank" :rel "noopener noreferrer"} (or label url)])
 
 
 

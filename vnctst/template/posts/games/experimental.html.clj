@@ -12,7 +12,7 @@
   [:a {:href url} (or label url)])
 
 (defn a-href-external [url & [label]]
-  [:a {:href url, :target "_blank"} (or label url)])
+  [:a {:href url, :target "_blank" :rel "noopener noreferrer"} (or label url)])
 
 (defn li [& args] (apply vector :li args))
 

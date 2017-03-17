@@ -27,7 +27,7 @@
 
 
 (heading-2 "Play" "遊ぶ")
-(p [:a {:href "/op0008/" :target "_blank"} "http://vnctst.tir.jp/op0008/"]
+(p [:a {:href "/op0008/" :target "_blank" :rel "noopener noreferrer"} "http://vnctst.tir.jp/op0008/"]
    " "
    "にて遊べます。")
 

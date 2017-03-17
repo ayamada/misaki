@@ -73,7 +73,7 @@
 
 (page-header "Libraries" "ライブラリ")
 (ul [
-     [:a {:href "https://github.com/ayamada/vnctst-audio4" :target "_blank"}
+     [:a {:href "https://github.com/ayamada/vnctst-audio4" :target "_blank" :rel "noopener noreferrer"}
       "html5環境でのゲーム向け音響ファイル再生ライブラリ vnctst-audio4"]
      ])
 

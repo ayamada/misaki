@@ -24,11 +24,11 @@
 
 
 (heading-2 "Play" "遊ぶ")
-(p [:a {:href "/op0005/" :target "_blank"} "http://vnctst.tir.jp/op0005/"]
+(p [:a {:href "/op0005/" :target "_blank" :rel "noopener noreferrer"} "http://vnctst.tir.jp/op0005/"]
    "にて遊べます。")
 [:ul [:li
       "プレイには"
-      [:a {:href "http://japan.unity3d.com/webplayer/" :target "_blank"} "Unity Web Player"]
+      [:a {:href "http://japan.unity3d.com/webplayer/" :target "_blank" :rel "noopener noreferrer"} "Unity Web Player"]
       "のインストールが必要です。"]]
 
 
