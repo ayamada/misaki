@@ -1,9 +1,9 @@
 ; @layout post
 ; @nocache true
 ; @title アニマルクリスマス
-; @version 1.0.0
-; @comment version 1.0.0
-; @date 2017/12/21
+; @version 1.0.1
+; @comment version 1.0.1
+; @date 2017/12/22
 
 (defn site->date [site]
   (let [dtf (org.joda.time.format.DateTimeFormat/forPattern "yyyy/MM/dd")]
@@ -78,6 +78,10 @@
 (heading-2 "History" "更新履歴")
 
 [:dl
+ [:dt "2017/12/22 version 1.0.1"]
+ [:dd [:ul
+       [:li "チャージ時エフェクトを微調整"]
+       [:li "照準を表示"]]]
  [:dt "2017/12/21 version 1.0.0"]
  [:dd [:ul [:li "公開"]]]
  ]
