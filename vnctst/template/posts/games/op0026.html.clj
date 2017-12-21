@@ -1,9 +1,9 @@
 ; @layout post
 ; @nocache true
 ; @title わさび食べ放題
-; @version 1.0.6
-; @comment version 1.0.6
-; @date 2017/03/22
+; @version 2.0.2
+; @comment version 2.0.2
+; @date 2017/11/23
 
 (defn site->date [site]
   (let [dtf (org.joda.time.format.DateTimeFormat/forPattern "yyyy/MM/dd")]
@@ -55,7 +55,6 @@
 
 [:ul
  [:li "お題は「グリーン」でした。"]
- [:li "詳しい説明はあとで書きます。"]
  ]
 
 
@@ -71,13 +70,41 @@
 
 (heading-2 "Play" "遊ぶ")
 
-[:ul [:li (a-href-external "http://vnctst.tir.jp/op0026/")]]
+(p "アツマール版を公開しました。")
 
+[:ul [:li (a-href-external "https://game.nicovideo.jp/atsumaru/games/gm4418")]]
+
+(p "以下から旧バージョン(1.0.7)も遊べます。")
+
+[:ul [:li (a-href-external "http://vnctst.tir.jp/op0026/")]]
 
 
 (heading-2 "History" "更新履歴")
 
 [:dl
+ [:dt "2017/11/23 version 2.0.2"]
+ [:dd [:ul
+       [:li "iOSで遊べない問題をきちんと修正"]
+       ]]
+ [:dt "2017/11/22 version 2.0.1"]
+ [:dd [:ul
+       [:li "iOSで遊べない問題を仮修正(不完全)"]
+       ]]
+ [:dt "2017/09/16 version 2.0.0"]
+ [:dd [:ul
+       [:li "アツマール用に改修"]
+       ;[:li ""]
+       ;[:li ""]
+       ;[:li ""]
+       ]]
+ [:dt "2017/04/15 version 1.0.7"]
+ [:dd [:ul
+       [:li "edgeで常にロードエラーが出る問題を修正"]
+       [:li "オーディオファイルのキャッシュが無効化されていたのを修正"]
+       ;[:li ""]
+       ;[:li ""]
+       ;[:li ""]
+       ]]
  [:dt "2017/03/22 version 1.0.6"]
  [:dd [:ul
        [:li "ローディング処理を改善"]
