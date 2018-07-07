@@ -1,7 +1,7 @@
 ; @layout  post
 ; @title   Sound Effects
-; @comment 着地音を追加
-; @date 2015/09/26
+; @comment 「ドラムロール」「レトロゲーム風」「パーン」「ゲームオーバー」を追加
+; @date 2018/07/07
 ; @nocache true
 
 ;;; heading-2は自動的にtocとして扱う
@@ -38,13 +38,25 @@
 
 [:ul
  [:li
-  "ここでは、外部サイトにて"
+  "ここでは、自作の効果音および、"
+  "外部サイトにて"
   (a-href-external "http://ja.wikipedia.org/wiki/%E3%83%91%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3" "Public Domain")
   "もしくは"
-  (a-href-external "https://creativecommons.org/choose/zero/?lang=ja" "CC0")
+  (a-href-external "https://creativecommons.org/publicdomain/zero/1.0/deed.ja" "CC0")
   "のライセンスで公開されている音源を加工して生成した効果音を公開します。"]
- [:li "各効果音のライセンスは元の音源に準じます。"]
  [:li "ダウンロードリンクより、ブラウザからの右クリック等を使い保存してください。"]
+ [:li
+  "各効果音のライセンスは、加工ものについては元の音源に準じます。"
+  [:br]
+  "完全自作のものについては、基本的には"
+  (a-href-external "https://creativecommons.org/licenses/sa/2.0/jp/"
+                   "CC SA 2.0 JP")
+  "のライセンスとします。"
+  [:br]
+  "これは具体的には「権利者表記不要」「加工改変OK」「商用利用OK」「でも著作権は放棄してないよ」という扱いになります。"
+  [:ul
+   [:li [:small "これはほぼCC0と同じなのですが、CC0だと著作権を放棄してしまう為、例えば「自分が作った素材をCC0にしていたら、○○という大手メディア会社が『この素材は○○が権利を保有している、お前は使うな』と勝手に著作権を主張してきた」というような事がもし起こった際に立場が弱くなってしまう恐れがあるので、このようにしています。なおCC-BYだと「権利者表記が必要」となり、これはこれで利用の手軽さが失われてしまうので避けています"]]]
+  ]
  ]
 
 
@@ -54,6 +66,87 @@
  (p {:class "desc"} "索引")]
 
 (toc)
+
+(heading-2 "Drumroll Sound" "ドラムロール")
+[:dl
+ [:dt "概要"]
+ [:dd "「ダララララララ…ターン」というドラムロール音です。"]
+ [:dt "試聴兼ダウンロード"]
+ [:dd (link "drumroll.m4a" "../material_se/drumroll.m4a")]
+ [:dt "ライセンス"]
+ [:dd "CC SA 2.0 JP"]
+ [:dt "ソース"]
+ [:dd "なし(自作)"]
+ [:dt "生成手順概要"]
+ [:dd "GarageBandとAudacityで適当に作った"]
+ ]
+
+
+(heading-2 "Retro Computer Game Like Sounds" "レトロゲーム風")
+[:dl
+ [:dt "概要"]
+ [:dd "大昔のゲームを連想させるSE各種です。"]
+ [:dt "試聴兼ダウンロード"]
+ [:dd
+  (link "caret.m4a" "../material_se/caret.m4a")
+  " : 「カーソル移動音」的なSE"]
+ [:dd
+  (link "submit.m4a" "../material_se/submit.m4a")
+  " : 「決定音」的なSE"]
+ [:dd
+  (link "error.m4a" "../material_se/error.m4a")
+  " : 「エラー」的なSE"]
+ [:dd
+  (link "pause.m4a" "../material_se/pause.m4a")
+  " : 「一時停止」的なSE"]
+ [:dd
+  (link "healing.ogg" "../material_se/healing.ogg")
+  " : 「回復中」的なSE(連続的に鳴らす想定)"]
+ [:dd
+  (link "healed.ogg" "../material_se/healed.ogg")
+  " : 「回復完了」的なSE(healing.oggの最後に鳴らす想定)"]
+ [:dt "ライセンス"]
+ [:dd "CC SA 2.0 JP"]
+ [:dt "ソース"]
+ [:dd "なし(自作)"]
+ [:dt "生成手順概要"]
+ [:dd "GarageBandとかBfxrとかAudacityとか使って適当に作った"]
+ ]
+
+
+(heading-2 "Bang Sound" "パーン")
+[:dl
+ [:dt "概要"]
+ [:dd "汎用で使える「パーン」という音です。"]
+ [:dt "試聴兼ダウンロード"]
+ [:dd (link "paan.ogg" "../material_se/paan.ogg")]
+ [:dt "ライセンス"]
+ [:dd "CC SA 2.0 JP"]
+ [:dt "ソース"]
+ [:dd "なし(自作)"]
+ [:dt "生成手順概要"]
+ [:dd "BfxrとAudacityで適当に作った"]
+ ]
+
+
+(heading-2 "Gameover Sound" "ゲームオーバー")
+[:dl
+ [:dt "概要"]
+ [:dd "情けない感じの「ヘロリヘロリヘロリ」という音です。"]
+ [:dt "試聴兼ダウンロード"]
+ [:dd (link "yarare.ogg" "../material_se/yarare.ogg")]
+ [:dt "ライセンス"]
+ [:dd "CC SA 2.0 JP"]
+ [:dt "ソース"]
+ [:dd "なし(自作)"]
+ [:dt "生成手順概要"]
+ [:dd "BfxrとAudacityで適当に作った"]
+ ]
+
+
+
+
+
 
 
 

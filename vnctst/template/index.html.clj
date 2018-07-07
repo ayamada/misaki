@@ -46,8 +46,8 @@
   "に移動しました。"]
  [:li
   "現在の代表作は「"
-  (link "キャプテンスーパーマーケマンサー"
-        "games/op0012-3.html")
+  (link "ネコゴゴゴ"
+        "games/nkggg.html")
   "」です。"]
  [:li
   "上記とは別に、ゲーム未満の"
@@ -66,6 +66,8 @@
 (ul [
      (link "Sound Effects 効果音"
            "materials/se.html")
+     (link "Bitmap Image ゲーム用画像"
+           "materials/img.html")
      (link "mp1mm16tir ビットマップフォント"
            "materials/mplus-1mn-medium-16-fnt-tir.html")
      ])
