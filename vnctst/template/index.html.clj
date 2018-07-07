@@ -66,7 +66,7 @@
 (ul [
      (link "Sound Effects 効果音"
            "materials/se.html")
-     (link "Bitmap Image ゲーム用画像"
+     (link "Bitmap Images ゲーム用画像"
            "materials/img.html")
      (link "mp1mm16tir ビットマップフォント"
            "materials/mplus-1mn-medium-16-fnt-tir.html")
