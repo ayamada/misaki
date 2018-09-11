@@ -1,9 +1,9 @@
 ; @layout post
 ; @nocache true
 ; @title わさび食べ放題
-; @version 2.0.2
-; @comment version 2.0.2
-; @date 2017/11/23
+; @version 2.1.0
+; @comment version 2.1.0
+; @date 2018/09/12
 
 (defn site->date [site]
   (let [dtf (org.joda.time.format.DateTimeFormat/forPattern "yyyy/MM/dd")]
@@ -82,6 +82,10 @@
 (heading-2 "History" "更新履歴")
 
 [:dl
+ [:dt "2018/09/12 version 2.1.0"]
+ [:dd [:ul
+       [:li "アツマールランキング対応"]
+       ]]
  [:dt "2017/11/23 version 2.0.2"]
  [:dd [:ul
        [:li "iOSで遊べない問題をきちんと修正"]

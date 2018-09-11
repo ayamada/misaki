@@ -10,3 +10,9 @@ a {
 
 pre.block { box-shadow: 0 0 5px #ddd; }
 pre.prettyprint { box-shadow: 0 0 5px #fde3e3; }
+
+q {
+  color: #000000;
+  background-color: #DFDFDF;
+  font-style: italic;
+}
